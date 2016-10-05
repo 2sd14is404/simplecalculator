@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>simple calculator</title>
+</head>
+<body>
+enter number 1: <input type="number" id="num1" required autofocus>
+enter number 2: <input type="number" id="num2" required>
+<input type="button" value="Add" onclick="Add();" id="btn">
+  <input type="button" value="Sub" onclick="Sub();" id="btn">
+  <input type="button" value="Mul" onclick="Mul();" id="btn">
+  <input type="button" value="Div" onclick="Div();" id="btn">
+  
+  <div id="result">
+    
+  </div>
+  <script>
+    function Add()
+     { 
+       var n1=document.getElementById("num1").value;
+       var n2=document.getElementById("num2").value;
+       var btn=document.getElementById("btn").value;
+       var result
+       if(btn == "Add")
+         result=+n1 + +n2;
+       alert ("the sum is" +result);
+       document.getElementById("result").innerText=result;
+     }
+    function ub()
+     { 
+       var n1=document.getElementById("num1").value;
+       var n2=document.getElementById("num2").value;
+       var btn=document.getElementById("btn").value;
+       var result
+       if(btn == "Sub")
+         result=+n1 - +n2;
+       alert ("the sum is" +result);
+       document.getElementById("result").innerText=result;
+     }
+    function Mul()
+     { 
+       var n1=document.getElementById("num1").value;
+       var n2=document.getElementById("num2").value;
+       var btn=document.getElementById("btn").value;
+       var result
+       if(btn == "Mul")
+         result=+n1 * +n2;
+       alert ("the sum is" +result);
+       document.getElementById("result").innerText=result;
+     }
+    function Div()
+     { 
+       var n1=document.getElementById("num1").value;
+       var n2=document.getElementById("num2").value;
+       var btn=document.getElementById("btn").value;
+       var result
+       if(btn == "Div")
+         result=+n1 + +n2;
+       alert ("the sum is" +result);
+       document.getElementById("result").innerText=result;
+     }
+    
+  </script>
+</body>
+</html>
